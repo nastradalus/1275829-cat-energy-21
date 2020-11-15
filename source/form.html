@@ -37,8 +37,11 @@
         Заполните анкету, и мы подберем
         программу питания для вашего кота
       </p>
-      <form class="order-content__form form" method="post" action="https://echo.htmlacademy.ru"
-            enctype="multipart/form-data">
+    </div>
+
+    <form class="order-content__form form" method="post" action="https://echo.htmlacademy.ru"
+          enctype="multipart/form-data">
+      <div class="form__wrapper wrapper">
         <div class="form__row form__row--columns-2">
 
           <p class="form__column">
@@ -76,9 +79,15 @@
           </p>
 
         </div>
+      </div>
 
-        <h2 class="form__title">Контактные данные (владельца кота)</h2>
+      <div class="form__row title title--line">
+        <div class="form__wrapper form__column title__wrapper wrapper">
+          <h2 class="form__title title__text">Контактные данные (владельца кота)</h2>
+        </div>
+      </div>
 
+      <div class="form__wrapper wrapper">
         <div class="form__row form__row--columns-2">
           <label class="form__column form__field">
             <span class="form__label">E-mail:*</span>
@@ -93,17 +102,29 @@
             <!-- svg-иконка -->
           </label>
         </div>
+      </div>
 
-        <h2 class="form__title">Комментарий</h2>
+      <div class="form__row title title--line">
+        <div class="form__wrapper form__column title__wrapper wrapper">
+          <h2 class="form__title title__text">Комментарий</h2>
+        </div>
+      </div>
 
+      <div class="form__wrapper wrapper">
         <label class="form__row form__field">
           <span class="form__label"></span>
           <textarea class="form__control form__control--textarea"
                     placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
+      </div>
 
-        <h2 class="form__title">Дополнительно</h2>
+      <div class="form__row title title--line">
+        <div class="form__wrapper form__column title__wrapper wrapper">
+          <h2 class="form__title title__text">Дополнительно</h2>
+        </div>
+      </div>
 
+      <div class="form__wrapper wrapper">
         <p class="form__row form__row--columns-4">
           <label class="form__column form__field form__field--checkbox">
             <input class="form__control form__control--checkbox visually-hidden" type="checkbox" name="sweetener"
@@ -133,7 +154,8 @@
             * — Обязательные поля
           </p>
         </div>
-      </form>
+      </div>
+    </form>
     </div>
   </section>
 </main>
