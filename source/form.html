@@ -12,8 +12,9 @@
       <img src="https://via.placeholder.com/150x150" width="202" height="59" alt="Логотип Cat Energy">
     </div>
     <nav class="page-header__nav nav">
-      <span class="visually-hidden">Открыть или закрыть меню</span>
-      <button class="nav__toggle" type="button"></button>
+      <button class="nav__toggle" type="button">
+        <span class="visually-hidden">Открыть или закрыть меню</span>
+      </button>
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link" href="index.html">Главная</a>
@@ -32,7 +33,7 @@
 <main class="page-content page-content--inner">
   <section class="order-content">
     <div class="order-content__wrapper wrapper">
-      <h1 class="order-content__title">Подбор программы</h1>
+      <h1 class="order-content__title title title--primary">Подбор программы</h1>
       <p class="order-content__slogan">
         Заполните анкету, и мы подберем
         программу питания для вашего кота
@@ -40,7 +41,7 @@
     </div>
 
     <form class="order-content__form form" method="post" action="https://echo.htmlacademy.ru"
-          enctype="multipart/form-data">
+      enctype="multipart/form-data">
       <div class="form__wrapper wrapper">
         <div class="form__row form__row--columns-2">
 
@@ -62,18 +63,15 @@
           <p class="form__column form__column--radio">
             <span class="visually-hidden">Режим питания</span>
             <label class="form__field form__field--radio">
-              <input class="form__control form__control--radio visually-hidden" type="radio" name="mode"
-                     value="Похудение" checked>
+              <input class="form__control form__control--radio visually-hidden" type="radio" name="mode" value="Похудение" checked>
               <span class="form__label">Похудение</span>
             </label>
             <label class="form__field form__field--radio">
-              <input class="form__control form__control--radio visually-hidden" type="radio" name="mode"
-                     value="Набор массы">
+              <input class="form__control form__control--radio visually-hidden" type="radio" name="mode" value="Набор массы">
               <span class="form__label">Набор массы</span>
             </label>
             <label class="form__field form__field--radio">
-              <input class="form__control form__control--radio visually-hidden" type="radio" name="mode"
-                     value="Не знаю (Нужен ваш совет)">
+              <input class="form__control form__control--radio visually-hidden" type="radio" name="mode" value="Не знаю (Нужен ваш совет)">
               <span class="form__label">Не знаю (Нужен ваш совет)</span>
             </label>
           </p>
@@ -92,13 +90,13 @@
           <label class="form__column form__field">
             <span class="form__label">E-mail:*</span>
             <input class="form__control form__control--text" type="email" name="email" placeholder="кuklachev@gmail.com"
-                   required>
+              required>
             <!-- svg-иконка -->
           </label>
           <label class="form__column form__field">
             <span class="form__label">Телефон:*</span>
             <input class="form__control form__control--text" type="text" name="phone" placeholder="8 (960) 900-60-90"
-                   required>
+              required>
             <!-- svg-иконка -->
           </label>
         </div>
@@ -112,9 +110,8 @@
 
       <div class="form__wrapper wrapper">
         <label class="form__row form__field">
-          <span class="form__label"></span>
-          <textarea class="form__control form__control--textarea"
-                    placeholder="Расскажите обо всех повадках кота"></textarea>
+          <span class="visually-hidden">Расскажите обо всех повадках кота</span>
+          <textarea class="form__control form__control--textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
       </div>
 
@@ -127,8 +124,7 @@
       <div class="form__wrapper wrapper">
         <p class="form__row form__row--columns-4">
           <label class="form__column form__field form__field--checkbox">
-            <input class="form__control form__control--checkbox visually-hidden" type="checkbox" name="sweetener"
-                   checked>
+            <input class="form__control form__control--checkbox visually-hidden" type="checkbox" name="sweetener" checked>
             <span class="form__label">Cахарозаменитель</span>
           </label>
           <label class="form__column form__field form__field--checkbox">
@@ -147,8 +143,7 @@
 
         <div class="form__row form__row--columns-2">
           <p class="form__column">
-            <span class="visually-hidden">Отправить форму заявки на подбор программы</span>
-            <button class="form__button button button--default" type="submit"></button>
+            <button class="form__button button button--default" type="submit">Отправить заявку</button>
           </p>
           <p class="form__column form__notice">
             * — Обязательные поля
@@ -156,7 +151,7 @@
         </div>
       </div>
     </form>
-    </div>
+
   </section>
 </main>
 
@@ -183,23 +178,25 @@
       <img src="https://via.placeholder.com/150x150" width="128" height="24" alt="Логотип Cat Energy">
     </p>
     <ul class="page-footer__socials socials-list">
-      <li class="socials-list__item socials-list__item--vk">
-        <span class="visually-hidden">VK</span>
-        <a class="socials-list__link" href="#"></a>
+      <li class="socials-list__item">
+        <a class="socials-list__link" href="#">
+          <span class="visually-hidden">VK</span>
+        </a>
       </li>
-      <li class="socials-list__item socials-list__item--instagram">
-        <span class="visually-hidden">Instagram</span>
-        <a class="socials-list__link" href="#"></a>
+      <li class="socials-list__item">
+        <a class="socials-list__link" href="#">
+          <span class="visually-hidden">Instagram</span>
+        </a>
       </li>
-      <li class="socials-list__item socials-list__item--fb">
-        <span class="visually-hidden">FaceBook</span>
-        <a class="socials-list__link" href="#"></a>
+      <li class="socials-list__item">
+        <a class="socials-list__link" href="#">
+          <span class="visually-hidden">FaceBook</span>
+        </a>
       </li>
     </ul>
     <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="copyright__text">HTML Academy</span>
-      <img class="copyright__logo" src="https://via.placeholder.com/150x150" width="27" height="34"
-           alt="Логотип HTML Academy">
+      <img class="copyright__logo" src="https://via.placeholder.com/150x150" width="27" height="34" alt="Логотип HTML Academy">
     </a>
   </div>
 
