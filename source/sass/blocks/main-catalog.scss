@@ -1,0 +1,16 @@
+.main-catalog__title {
+  font-family: $font-additional;
+  color: $color-black;
+  font-size: 24px;
+  line-height: 37px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.main-catalog__item {
+  background-color: $color-secondary-light;
+}
+
+.main-catalog__description {
+  border-bottom: 1px solid $color-tertiary-extra-light;
+}

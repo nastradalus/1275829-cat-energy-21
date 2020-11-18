@@ -1,0 +1,57 @@
+.form__label {
+  font-family: $font-additional;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.form__field {
+  &--radio {
+    .form__label {
+      color: $color-tertiary-dark;
+    }
+  }
+
+  &--checkbox {
+    .form__label {
+      color: $color-black;
+    }
+  }
+}
+
+.form__control {
+  font-family: $font-additional;
+  color: $color-tertiary;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  border: 1px solid $color-secondary-darker;
+
+  &:hover {
+    border-color: $color-secondary-dark;
+  }
+
+  &:focus {
+    border-color: $color-tertiary;
+    outline: none;
+  }
+
+  &:focus:invalid {
+    border-color: $color-error;
+  }
+
+  &::placeholder {
+    color: inherit;
+  }
+}
+
+.form__button {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.form__notice {
+  color: $color-black;
+  font-size: 14px;
+  line-height: 16px;
+}

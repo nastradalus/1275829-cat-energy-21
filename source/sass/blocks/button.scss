@@ -1,0 +1,53 @@
+.button {
+  &--default {
+    display: inline-block;
+    padding: 14px;
+    font-family: $font-additional;
+    color: $color-white;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $color-primary;
+    border: none;
+
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+
+    &:active {
+      color: rgba($color-white, 0.3);
+      background-color: $color-primary-dark;
+    }
+  }
+
+  &--direction {
+    font-family: $font-additional;
+    color: $color-black;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &--light {
+    display: inline-block;
+    padding: 14px;
+    font-family: $font-additional;
+    color: $color-tertiary;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: $color-secondary-light;
+
+    &:hover {
+      background-color: $color-secondary;
+    }
+
+    &:active {
+      color: rgba($color-tertiary, 0.3);
+      background-color: $color-secondary;
+    }
+  }
+}

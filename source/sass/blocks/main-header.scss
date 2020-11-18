@@ -1,0 +1,32 @@
+.main-header {
+  position: relative;
+  font-family: $font-additional;
+  color: $color-white;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: calc(100% - 178px);
+    background-color: rgba($color-primary, 0.85);
+  }
+}
+
+.main-header__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.main-header__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+}
+
+.main-header__button {
+  font-size: 14px;
+  line-height: 18px;
+}
