@@ -9,3 +9,36 @@
   line-height: 40px;
   font-weight: 400;
 }
+
+.main-example__caption {
+  &--highlighted {
+    font-size: 12px;
+    line-height: 12px;
+  }
+
+  &--total {
+    font-family: $font-additional;
+    color: $color-black;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}
+
+.main-example__value {
+  &--highlighted {
+    font-family: $font-additional;
+    color: $color-black;
+    font-size: 24px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+
+  &--total {
+    font-family: $font-additional;
+    color: $color-black;
+    font-size: 14px;
+    line-height: 20px;
+    text-transform: uppercase;
+  }
+}

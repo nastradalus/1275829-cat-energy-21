@@ -4,10 +4,12 @@
 
 .nav__item {
   color: $color-black;
+  font-size: 20px;
+  line-height: 20px;
   font-weight: 500;
   text-transform: uppercase;
 
-  &.nav__item--current {
+  &--current {
     border-bottom: 1px solid $color-primary;
   }
 }

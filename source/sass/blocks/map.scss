@@ -1,7 +1,13 @@
-.map.map--main .map__card {
-  background-color: $color-white;
-}
+.map {
+  &--main {
+    .map__card {
+      background-color: $color-white;
+    }
+  }
 
-.map.map--inner .map__card {
-  background-color: $color-secondary-light;
+  &--inner {
+    .map__card {
+      background-color: $color-secondary-light;
+    }
+  }
 }
