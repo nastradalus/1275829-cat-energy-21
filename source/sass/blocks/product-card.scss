@@ -1,0 +1,31 @@
+.product-card__title {
+  font-family: $font-additional;
+  color: $color-tertiary-dark;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.product-card__link {
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.product-card__item {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.product-card__button {
+  font-size: 16px;
+  line-height: 16px;
+}

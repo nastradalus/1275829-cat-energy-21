@@ -1,0 +1,26 @@
+.additional-product-card__title {
+  font-family: $font-additional;
+  color: $color-tertiary-dark;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.additional-product-card__description {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.additional-product-card__button {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.additional-product-catalog__offer {
+  color: $color-white;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  background-color: $color-primary;
+}

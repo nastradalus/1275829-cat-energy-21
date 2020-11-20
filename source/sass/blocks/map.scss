@@ -1,0 +1,13 @@
+.map {
+  &--main {
+    .map__card {
+      background-color: $color-white;
+    }
+  }
+
+  &--inner {
+    .map__card {
+      background-color: $color-secondary-light;
+    }
+  }
+}
