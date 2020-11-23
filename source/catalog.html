@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Каталог продукции</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 
-<header class="page-header page-header--inner">
+<header class="page-header page-header--main">
   <div class="page-header__wrapper wrapper">
     <div class="page-header__logo">
       <img src="https://via.placeholder.com/150x150" width="202" height="59" alt="Логотип Cat Energy">
     </div>
+    <button class="page-header__menu-toggle" type="button">
+      <span class="visually-hidden">Открыть или закрыть меню</span>
+    </button>
     <nav class="page-header__nav nav">
-      <button class="nav__toggle" type="button">
-        <span class="visually-hidden">Открыть или закрыть меню</span>
-      </button>
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link" href="index.html">Главная</a>
@@ -39,164 +40,178 @@
       <!-- картинку поставила после заголовка для доступности: сначала заголовок, потом картинка -->
       <ul class="product-catalog__list">
         <li class="product-catalog__item product-card">
-          <h2 class="product-card__title">
-            <a class="product-card__link" href="#">Cat Energy PRO 500 г</a>
-          </h2>
           <a class="product-card__link product-card__image" href="#">
             <img src="https://via.placeholder.com/150x150" width="161" height="172" alt="Корм PRO со вкусом курицы, 500 г">
           </a>
-          <ul class="product-card__list">
-            <li class="product-card__item">
-              <span class="product-card__property">Масса</span>
-              <span class="product-card__value">500 г</span>
-            </li>
-            <li class="product-card__item">
-              <span class="product-card__property">Вкус</span>
-              <span class="product-card__value">Курица</span>
-            </li>
-            <li class="product-card__item">
-              <span class="product-card__property">Цена</span>
-              <span class="product-card__value">700 р.</span>
-            </li>
-          </ul>
+          <div class="product-card__container">
+            <h2 class="product-card__title">
+              <a class="product-card__link" href="#">Cat Energy PRO 500 г</a>
+            </h2>
+            <ul class="product-card__list">
+              <li class="product-card__item">
+                <span class="product-card__property">Масса</span>
+                <span class="product-card__value">500 г</span>
+              </li>
+              <li class="product-card__item">
+                <span class="product-card__property">Вкус</span>
+                <span class="product-card__value">Курица</span>
+              </li>
+              <li class="product-card__item">
+                <span class="product-card__property">Цена</span>
+                <span class="product-card__value">700 р.</span>
+              </li>
+            </ul>
+          </div>
           <a class="product-card__button button button--default" href="#">Заказать</a>
         </li>
         <li class="product-catalog__item product-card">
-          <h2 class="product-card__title">
-            <a class="product-card__link" href="#">Cat Energy PRO 1000 г</a>
-          </h2>
           <a class="product-card__link product-card__image" href="#">
             <img src="https://via.placeholder.com/150x150" width="172" height="202" alt="Корм PRO со вкусом курицы, 1000 г">
           </a>
-          <ul class="product-card__list">
-            <li class="product-card__item">
-              <span class="product-card__property">Масса</span>
-              <span class="product-card__value">100 г</span>
-            </li>
-            <li class="product-card__item">
-              <span class="product-card__property">Вкус</span>
-              <span class="product-card__value">Курица</span>
-            </li>
-            <li class="product-card__item">
-              <span class="product-card__property">Цена</span>
-              <span class="product-card__value">100 р.</span>
-            </li>
-          </ul>
+          <div class="product-card__container">
+            <h2 class="product-card__title">
+              <a class="product-card__link" href="#">Cat Energy PRO 1000 г</a>
+            </h2>
+            <ul class="product-card__list">
+              <li class="product-card__item">
+                <span class="product-card__property">Масса</span>
+                <span class="product-card__value">100 г</span>
+              </li>
+              <li class="product-card__item">
+                <span class="product-card__property">Вкус</span>
+                <span class="product-card__value">Курица</span>
+              </li>
+              <li class="product-card__item">
+                <span class="product-card__property">Цена</span>
+                <span class="product-card__value">100 р.</span>
+              </li>
+            </ul>
+          </div>
           <a class="product-card__button button button--default" href="#">Заказать</a>
         </li>
         <li class="product-catalog__item product-card">
-          <h2 class="product-card__title">
-            <a class="product-card__link" href="#">Cat Energy PRO 500 г</a>
-          </h2>
           <a class="product-card__link product-card__image" href="#">
             <img src="https://via.placeholder.com/150x150" width="163" height="174" alt="Корм PRO со вкусом рыбы, 500 г">
           </a>
-          <ul class="product-card__list">
-            <li class="product-card__item">
-              <span class="product-card__property">Масса</span>
-              <span class="product-card__value">500 г</span>
-            </li>
-            <li class="product-card__item">
-              <span class="product-card__property">Вкус</span>
-              <span class="product-card__value">Рыба</span>
-            </li>
-            <li class="product-card__item">
-              <span class="product-card__property">Цена</span>
-              <span class="product-card__value">700 р.</span>
-            </li>
-          </ul>
+          <div class="product-card__container">
+            <h2 class="product-card__title">
+              <a class="product-card__link" href="#">Cat Energy PRO 500 г</a>
+            </h2>
+            <ul class="product-card__list">
+              <li class="product-card__item">
+                <span class="product-card__property">Масса</span>
+                <span class="product-card__value">500 г</span>
+              </li>
+              <li class="product-card__item">
+                <span class="product-card__property">Вкус</span>
+                <span class="product-card__value">Рыба</span>
+              </li>
+              <li class="product-card__item">
+                <span class="product-card__property">Цена</span>
+                <span class="product-card__value">700 р.</span>
+              </li>
+            </ul>
+          </div>
           <a class="product-card__button button button--default" href="#">Заказать</a>
         </li>
         <li class="product-catalog__item product-card">
-          <h2 class="product-card__title">
-            <a class="product-card__link" href="#">Cat Energy PRO 1000 г</a>
-          </h2>
           <a class="product-card__link product-card__image" href="#">
             <img src="https://via.placeholder.com/150x150" width="172" height="196" alt="Корм PRO со вкусом рыбы, 1000 г">
           </a>
-          <ul class="product-card__list">
-            <li class="product-card__item">
-              <span class="product-card__property">Масса</span>
-              <span class="product-card__value">1000 г</span>
-            </li>
-            <li class="product-card__item">
-              <span class="product-card__property">Вкус</span>
-              <span class="product-card__value">Рыба</span>
-            </li>
-            <li class="product-card__item">
-              <span class="product-card__property">Цена</span>
-              <span class="product-card__value">1000 р.</span>
-            </li>
-          </ul>
+          <div class="product-card__container">
+            <h2 class="product-card__title">
+              <a class="product-card__link" href="#">Cat Energy PRO 1000 г</a>
+            </h2>
+            <ul class="product-card__list">
+              <li class="product-card__item">
+                <span class="product-card__property">Масса</span>
+                <span class="product-card__value">1000 г</span>
+              </li>
+              <li class="product-card__item">
+                <span class="product-card__property">Вкус</span>
+                <span class="product-card__value">Рыба</span>
+              </li>
+              <li class="product-card__item">
+                <span class="product-card__property">Цена</span>
+                <span class="product-card__value">1000 р.</span>
+              </li>
+            </ul>
+          </div>
           <a class="product-card__button button button--default" href="#">Заказать</a>
         </li>
         <li class="product-catalog__item product-card">
-          <h2 class="product-card__title">
-            <a class="product-card__link" href="#">Cat Energy SLIM 500 г</a>
-          </h2>
           <a class="product-card__link product-card__image" href="#">
             <img src="https://via.placeholder.com/150x150" width="161" height="171" alt="Корм SLIM со вкусом гречки, 500 г">
           </a>
-          <ul class="product-card__list">
-            <li class="product-card__item">
-              <span class="product-card__property">Масса</span>
-              <span class="product-card__value">500 г</span>
-            </li>
-            <li class="product-card__item">
-              <span class="product-card__property">Вкус</span>
-              <span class="product-card__value">Гречка</span>
-            </li>
-            <li class="product-card__item">
-              <span class="product-card__property">Цена</span>
-              <span class="product-card__value">400 р.</span>
-            </li>
-          </ul>
+          <div class="product-card__container">
+            <h2 class="product-card__title">
+              <a class="product-card__link" href="#">Cat Energy SLIM 500 г</a>
+            </h2>
+            <ul class="product-card__list">
+              <li class="product-card__item">
+                <span class="product-card__property">Масса</span>
+                <span class="product-card__value">500 г</span>
+              </li>
+              <li class="product-card__item">
+                <span class="product-card__property">Вкус</span>
+                <span class="product-card__value">Гречка</span>
+              </li>
+              <li class="product-card__item">
+                <span class="product-card__property">Цена</span>
+                <span class="product-card__value">400 р.</span>
+              </li>
+            </ul>
+          </div>
           <a class="product-card__button button button--default" href="#">Заказать</a>
         </li>
         <li class="product-catalog__item product-card">
-          <h2 class="product-card__title">
-            <a class="product-card__link" href="#">Cat Energy SLIM 1000 г</a>
-          </h2>
           <a class="product-card__link product-card__image" href="#">
             <img src="https://via.placeholder.com/150x150" width="172" height="196" alt="Корм SLIM со вкусом гречки, 1000 г">
           </a>
-          <ul class="product-card__list">
-            <li class="product-card__item">
-              <span class="product-card__property">Масса</span>
-              <span class="product-card__value">1000 г</span>
-            </li>
-            <li class="product-card__item">
-              <span class="product-card__property">Вкус</span>
-              <span class="product-card__value">Гречка</span>
-            </li>
-            <li class="product-card__item">
-              <span class="product-card__property">Цена</span>
-              <span class="product-card__value">700 р.</span>
-            </li>
-          </ul>
+          <div class="product-card__container">
+            <h2 class="product-card__title">
+              <a class="product-card__link" href="#">Cat Energy SLIM 1000 г</a>
+            </h2>
+            <ul class="product-card__list">
+              <li class="product-card__item">
+                <span class="product-card__property">Масса</span>
+                <span class="product-card__value">1000 г</span>
+              </li>
+              <li class="product-card__item">
+                <span class="product-card__property">Вкус</span>
+                <span class="product-card__value">Гречка</span>
+              </li>
+              <li class="product-card__item">
+                <span class="product-card__property">Цена</span>
+                <span class="product-card__value">700 р.</span>
+              </li>
+            </ul>
+          </div>
           <a class="product-card__button button button--default" href="#">Заказать</a>
         </li>
         <li class="product-catalog__item product-card">
-          <h2 class="product-card__title">
-            <a class="product-card__link" href="#">Cat Energy SLIM 500 г</a>
-          </h2>
           <a class="product-card__link product-card__image" href="#">
             <img src="https://via.placeholder.com/150x150" width="163" height="174" alt="Корм SLIM со вкусом риса, 500 г">
           </a>
-          <ul class="product-card__list">
-            <li class="product-card__item">
-              <span class="product-card__property">Масса</span>
-              <span class="product-card__value">500 г</span>
-            </li>
-            <li class="product-card__item">
-              <span class="product-card__property">Вкус</span>
-              <span class="product-card__value">Рис</span>
-            </li>
-            <li class="product-card__item">
-              <span class="product-card__property">Цена</span>
-              <span class="product-card__value">500 р.</span>
-            </li>
-          </ul>
+          <div class="product-card__container">
+            <h2 class="product-card__title">
+              <a class="product-card__link" href="#">Cat Energy SLIM 500 г</a>
+            </h2>
+            <ul class="product-card__list">
+              <li class="product-card__item">
+                <span class="product-card__property">Масса</span>
+                <span class="product-card__value">500 г</span>
+              </li>
+              <li class="product-card__item">
+                <span class="product-card__property">Вкус</span>
+                <span class="product-card__value">Рис</span>
+              </li>
+              <li class="product-card__item">
+                <span class="product-card__property">Цена</span>
+                <span class="product-card__value">500 р.</span>
+              </li>
+            </ul>
+          </div>
           <a class="product-card__button button button--default" href="#">Заказать</a>
         </li>
         <li class="product-catalog__item product-more">
@@ -265,8 +280,7 @@
 
   <div class="page-footer__map map map--inner">
     <h2 class="visually-hidden">Местоположение магазина</h2>
-    <div class="map__object" id="map"></div><!-- сюда загрузится карта -->
-    <div class="map__wrapper wrapper">
+    <div class="map__wrapper">
       <div class="map__card card-address">
         <p class="card-address__left card-address__title">
           Приглашаем к сотрудничеству дилеров!
@@ -277,6 +291,7 @@
         </p>
       </div>
     </div>
+    <div class="map__object" id="map"></div><!-- сюда загрузится карта -->
   </div>
 
   <div class="page-footer__wrapper wrapper">

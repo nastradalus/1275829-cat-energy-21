@@ -1,0 +1,16 @@
+.additional-product-catalog__wrapper {
+  @media (min-width: $desktop) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 80px;
+  }
+}
+
+.additional-product-catalog__list {
+  @include listReset();
+  margin: 0;
+
+  @media (min-width: $desktop) {
+    grid-column: 1 / 4;
+  }
+}

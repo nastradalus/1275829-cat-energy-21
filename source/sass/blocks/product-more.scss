@@ -1,3 +1,9 @@
+.product-more {
+  @media (min-width: $tablet) {
+    border: 2px solid $color-secondary-light;
+  }
+}
+
 .product-more__title {
   font-family: $font-additional;
   color: $color-tertiary-extra-dark;

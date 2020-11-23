@@ -1,13 +1,64 @@
 .map {
+  position: relative;
+
   &--main {
-    .map__card {
+    .map__wrapper {
       background-color: $color-white;
+
+      @media (min-width: $desktop) {
+        background-color: transparent;
+      }
+    }
+
+    .map__card {
+      @media (min-width: $desktop) {
+        background-color: $color-white;
+      }
     }
   }
 
   &--inner {
     .map__card {
-      background-color: $color-secondary-light;
+      @media (min-width: $desktop) {
+        background-color: $color-white;
+      }
     }
   }
+}
+
+.map__wrapper {
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: $desktop - 110px * 2;
+    margin: 0 auto;
+  }
+}
+
+.map__card {
+  width: $mobile;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet) {
+    width: $tablet;
+    padding: 0 71px;
+  }
+
+  @media (min-width: $desktop) {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    width: 570px;
+
+    padding: 66px 76px 51px;
+  }
+}
+
+.map__object {
+  height: 400px;
 }

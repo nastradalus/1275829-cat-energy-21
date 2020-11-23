@@ -1,0 +1,6 @@
+.socials-list {
+  @include listReset();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

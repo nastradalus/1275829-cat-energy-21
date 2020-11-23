@@ -2,6 +2,21 @@
   font-family: $font-additional;
 }
 
+.nav__list {
+  @include listReset();
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
 .nav__item {
   color: $color-black;
   font-size: 20px;
