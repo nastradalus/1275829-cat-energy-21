@@ -1,0 +1,11 @@
+/* в Д16 указано, что можно использовать глобальный стиль для img */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

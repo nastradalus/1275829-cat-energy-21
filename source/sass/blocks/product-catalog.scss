@@ -1,24 +1,17 @@
-.main-advantages__list {
+.product-catalog__list {
   @include listReset();
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 19px;
+  margin: 0;
 
   @media (min-width: $tablet) {
     grid-template-columns: 1fr 1fr;
-    gap: 37px 153px;
+    gap: 59px 60px;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 37px 94px;
+    gap: 63px 80px;
   }
-}
-
-.main-advantages__title {
-  font-family: $font-additional;
-  color: $color-black;
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 400;
 }

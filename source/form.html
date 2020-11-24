@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <title>Подбор программы</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="page__body">
 
-<header class="page-header page-header--inner">
+<header class="page-header page-header--main">
   <div class="page-header__wrapper wrapper">
     <div class="page-header__logo">
       <img src="https://via.placeholder.com/150x150" width="202" height="59" alt="Логотип Cat Energy">
     </div>
+    <button class="page-header__menu-toggle" type="button">
+      <span class="visually-hidden">Открыть или закрыть меню</span>
+    </button>
     <nav class="page-header__nav nav">
-      <button class="nav__toggle" type="button">
-        <span class="visually-hidden">Открыть или закрыть меню</span>
-      </button>
       <ul class="nav__list">
         <li class="nav__item">
           <a class="nav__link" href="index.html">Главная</a>
@@ -160,8 +161,7 @@
 
   <div class="page-footer__map map map--inner">
     <h2 class="visually-hidden">Местоположение магазина</h2>
-    <div class="map__object" id="map"></div><!-- сюда загрузится карта -->
-    <div class="map__wrapper wrapper">
+    <div class="map__wrapper">
       <div class="map__card card-address">
         <p class="card-address__left card-address__title">
           Приглашаем к сотрудничеству дилеров!
@@ -172,6 +172,7 @@
         </p>
       </div>
     </div>
+    <div class="map__object" id="map"></div><!-- сюда загрузится карта -->
   </div>
 
   <div class="page-footer__wrapper wrapper">

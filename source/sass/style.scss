@@ -1,17 +1,21 @@
 /* GLOBALS */
 
 @import "globals/normalize";
+@import "globals/global";
 @import "globals/fonts";
 @import "globals/settings";
+@import "globals/mixins";
 
 /* BLOCKS */
 
 @import "blocks/visually-hidden";
+@import "blocks/wrapper";
 @import "blocks/page";
 @import "blocks/nav";
 @import "blocks/title";
 @import "blocks/button";
 @import "blocks/map";
+@import "blocks/page-header";
 @import "blocks/main-header";
 @import "blocks/main-catalog";
 @import "blocks/main-advantages";
@@ -25,3 +29,6 @@
 @import "blocks/order-content";
 @import "blocks/form";
 @import "blocks/slider";
+@import "blocks/product-catalog";
+@import "blocks/additional-product-catalog";
+@import "blocks/socials-list";

@@ -13,6 +13,33 @@
     height: calc(100% - 178px);
     background-color: rgba($color-primary, 0.85);
   }
+
+  @media (min-width: $tablet) {
+    color: $color-black;
+
+    &::before {
+      content: none;
+    }
+  }
+}
+
+.main-header__wrapper {
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    position: relative;
+    padding-bottom: 526px;
+    text-align: left;
+  }
+
+  @media (min-width: $tablet) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 696px;
+    padding-bottom: 0;
+  }
 }
 
 .main-header__title {
@@ -24,6 +51,18 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
+}
+
+.main-header__image {
+  @media (min-width: $tablet) {
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop) {
+    left: 50%;
+  }
 }
 
 .main-header__button {

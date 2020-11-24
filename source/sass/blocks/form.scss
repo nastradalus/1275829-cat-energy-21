@@ -1,3 +1,36 @@
+.form__row {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  &--columns-2 {
+    row-gap: 14px;
+
+    @media (min-width: $tablet) {
+      row-gap: 14px;
+    }
+
+    @media (min-width: $desktop) {
+      grid-template-columns: 1fr 1fr;
+      column-gap: 80px;
+    }
+  }
+
+  &--columns-4 {
+    row-gap: 13px;
+
+    @media (min-width: $tablet) {
+      grid-template-columns: 1fr 1fr;
+      row-gap: 32px;
+      column-gap: 80px;
+    }
+
+    @media (min-width: $desktop) {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      column-gap: 104px;
+    }
+  }
+}
+
 .form__label {
   font-family: $font-additional;
   font-size: 16px;
