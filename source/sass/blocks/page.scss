@@ -5,3 +5,9 @@
   line-height: 18px;
   font-weight: 400;
 }
+
+.page__body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}

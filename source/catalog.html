@@ -8,14 +8,18 @@
 </head>
 <body class="page__body">
 
-<header class="page-header page-header--main">
-  <div class="page-header__wrapper wrapper">
+<header class="page-header page-header--inner">
+  <div class="page-header__wrapper">
     <div class="page-header__logo">
-      <img src="https://via.placeholder.com/150x150" width="202" height="59" alt="Логотип Cat Energy">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="https://via.placeholder.com/202x59">
+        <source media="(min-width: 768px)" srcset="https://via.placeholder.com/174x52">
+        <img class="page-header__image" src="https://via.placeholder.com/190x38" width="202" height="59" alt="Логотип Cat Energy">
+      </picture>
+      <button class="page-header__menu-toggle" type="button">
+        <span class="visually-hidden">Открыть или закрыть меню</span>
+      </button>
     </div>
-    <button class="page-header__menu-toggle" type="button">
-      <span class="visually-hidden">Открыть или закрыть меню</span>
-    </button>
     <nav class="page-header__nav nav">
       <ul class="nav__list">
         <li class="nav__item">
@@ -37,16 +41,20 @@
   <section class="product-catalog">
     <div class="product-catalog__wrapper wrapper">
       <h1 class="product-catalog__title title title--primary">Каталог продукции</h1>
-      <!-- картинку поставила после заголовка для доступности: сначала заголовок, потом картинка -->
+    </div>
+    <div class="product-catalog__wrapper product-catalog__wrapper--content">
       <ul class="product-catalog__list">
         <li class="product-catalog__item product-card">
           <a class="product-card__link product-card__image" href="#">
-            <img src="https://via.placeholder.com/150x150" width="161" height="172" alt="Корм PRO со вкусом курицы, 500 г">
+            <picture>
+              <source media="(min-width: 768px)" srcset="https://via.placeholder.com/161x172">
+              <img class="product-card__image-src" src="https://via.placeholder.com/140x112" width="161" height="172" alt="Корм PRO со вкусом курицы, 500 г">
+            </picture>
           </a>
           <div class="product-card__container">
-            <h2 class="product-card__title">
-              <a class="product-card__link" href="#">Cat Energy PRO 500 г</a>
-            </h2>
+            <a class="product-card__link" href="#">
+              <h2 class="product-card__title">Cat Energy PRO 500 г</h2>
+            </a>
             <ul class="product-card__list">
               <li class="product-card__item">
                 <span class="product-card__property">Масса</span>
@@ -58,7 +66,7 @@
               </li>
               <li class="product-card__item">
                 <span class="product-card__property">Цена</span>
-                <span class="product-card__value">700 р.</span>
+                <span class="product-card__value">700 Р.</span>
               </li>
             </ul>
           </div>
@@ -66,16 +74,19 @@
         </li>
         <li class="product-catalog__item product-card">
           <a class="product-card__link product-card__image" href="#">
-            <img src="https://via.placeholder.com/150x150" width="172" height="202" alt="Корм PRO со вкусом курицы, 1000 г">
+            <picture>
+              <source media="(min-width: 768px)" srcset="https://via.placeholder.com/168x206">
+              <img class="product-card__image-src" src="https://via.placeholder.com/140x112" width="172" height="202" alt="Корм PRO со вкусом курицы, 1000 г">
+            </picture>
           </a>
           <div class="product-card__container">
-            <h2 class="product-card__title">
-              <a class="product-card__link" href="#">Cat Energy PRO 1000 г</a>
-            </h2>
+            <a class="product-card__link" href="#">
+              <h2 class="product-card__title">Cat Energy PRO 1000 г</h2>
+            </a>
             <ul class="product-card__list">
               <li class="product-card__item">
                 <span class="product-card__property">Масса</span>
-                <span class="product-card__value">100 г</span>
+                <span class="product-card__value">1000 г</span>
               </li>
               <li class="product-card__item">
                 <span class="product-card__property">Вкус</span>
@@ -83,7 +94,7 @@
               </li>
               <li class="product-card__item">
                 <span class="product-card__property">Цена</span>
-                <span class="product-card__value">100 р.</span>
+                <span class="product-card__value">1000 Р.</span>
               </li>
             </ul>
           </div>
@@ -91,12 +102,15 @@
         </li>
         <li class="product-catalog__item product-card">
           <a class="product-card__link product-card__image" href="#">
-            <img src="https://via.placeholder.com/150x150" width="163" height="174" alt="Корм PRO со вкусом рыбы, 500 г">
+            <picture>
+              <source media="(min-width: 768px)" srcset="https://via.placeholder.com/161x172">
+              <img class="product-card__image-src" src="https://via.placeholder.com/140x112" width="163" height="174" alt="Корм PRO со вкусом рыбы, 500 г">
+            </picture>
           </a>
           <div class="product-card__container">
-            <h2 class="product-card__title">
-              <a class="product-card__link" href="#">Cat Energy PRO 500 г</a>
-            </h2>
+            <a class="product-card__link" href="#">
+              <h2 class="product-card__title">Cat Energy PRO 500 г</h2>
+            </a>
             <ul class="product-card__list">
               <li class="product-card__item">
                 <span class="product-card__property">Масса</span>
@@ -108,7 +122,7 @@
               </li>
               <li class="product-card__item">
                 <span class="product-card__property">Цена</span>
-                <span class="product-card__value">700 р.</span>
+                <span class="product-card__value">700 Р.</span>
               </li>
             </ul>
           </div>
@@ -116,12 +130,15 @@
         </li>
         <li class="product-catalog__item product-card">
           <a class="product-card__link product-card__image" href="#">
-            <img src="https://via.placeholder.com/150x150" width="172" height="196" alt="Корм PRO со вкусом рыбы, 1000 г">
+            <picture>
+              <source media="(min-width: 768px)" srcset="https://via.placeholder.com/168x206">
+              <img class="product-card__image-src" src="https://via.placeholder.com/140x112" width="172" height="196" alt="Корм PRO со вкусом рыбы, 1000 г">
+            </picture>
           </a>
           <div class="product-card__container">
-            <h2 class="product-card__title">
-              <a class="product-card__link" href="#">Cat Energy PRO 1000 г</a>
-            </h2>
+            <a class="product-card__link" href="#">
+              <h2 class="product-card__title">Cat Energy PRO 1000 г</h2>
+            </a>
             <ul class="product-card__list">
               <li class="product-card__item">
                 <span class="product-card__property">Масса</span>
@@ -133,7 +150,7 @@
               </li>
               <li class="product-card__item">
                 <span class="product-card__property">Цена</span>
-                <span class="product-card__value">1000 р.</span>
+                <span class="product-card__value">1000 Р.</span>
               </li>
             </ul>
           </div>
@@ -141,12 +158,15 @@
         </li>
         <li class="product-catalog__item product-card">
           <a class="product-card__link product-card__image" href="#">
-            <img src="https://via.placeholder.com/150x150" width="161" height="171" alt="Корм SLIM со вкусом гречки, 500 г">
+            <picture>
+              <source media="(min-width: 768px)" srcset="https://via.placeholder.com/161x172">
+              <img class="product-card__image-src" src="https://via.placeholder.com/140x112" width="161" height="171" alt="Корм SLIM со вкусом гречки, 500 г">
+            </picture>
           </a>
           <div class="product-card__container">
-            <h2 class="product-card__title">
-              <a class="product-card__link" href="#">Cat Energy SLIM 500 г</a>
-            </h2>
+            <a class="product-card__link" href="#">
+              <h2 class="product-card__title">Cat Energy SLIM 500 г</h2>
+            </a>
             <ul class="product-card__list">
               <li class="product-card__item">
                 <span class="product-card__property">Масса</span>
@@ -158,7 +178,7 @@
               </li>
               <li class="product-card__item">
                 <span class="product-card__property">Цена</span>
-                <span class="product-card__value">400 р.</span>
+                <span class="product-card__value">400 Р.</span>
               </li>
             </ul>
           </div>
@@ -166,12 +186,15 @@
         </li>
         <li class="product-catalog__item product-card">
           <a class="product-card__link product-card__image" href="#">
-            <img src="https://via.placeholder.com/150x150" width="172" height="196" alt="Корм SLIM со вкусом гречки, 1000 г">
+            <picture>
+              <source media="(min-width: 768px)" srcset="https://via.placeholder.com/168x206">
+              <img class="product-card__image-src" src="https://via.placeholder.com/140x112" width="172" height="196" alt="Корм SLIM со вкусом гречки, 1000 г">
+            </picture>
           </a>
           <div class="product-card__container">
-            <h2 class="product-card__title">
-              <a class="product-card__link" href="#">Cat Energy SLIM 1000 г</a>
-            </h2>
+            <a class="product-card__link" href="#">
+              <h2 class="product-card__title">Cat Energy SLIM 1000 г</h2>
+            </a>
             <ul class="product-card__list">
               <li class="product-card__item">
                 <span class="product-card__property">Масса</span>
@@ -183,7 +206,7 @@
               </li>
               <li class="product-card__item">
                 <span class="product-card__property">Цена</span>
-                <span class="product-card__value">700 р.</span>
+                <span class="product-card__value">700 Р.</span>
               </li>
             </ul>
           </div>
@@ -191,12 +214,15 @@
         </li>
         <li class="product-catalog__item product-card">
           <a class="product-card__link product-card__image" href="#">
-            <img src="https://via.placeholder.com/150x150" width="163" height="174" alt="Корм SLIM со вкусом риса, 500 г">
+            <picture>
+              <source media="(min-width: 768px)" srcset="https://via.placeholder.com/161x172">
+              <img class="product-card__image-src" src="https://via.placeholder.com/140x112" width="163" height="174" alt="Корм SLIM со вкусом риса, 500 г">
+            </picture>
           </a>
           <div class="product-card__container">
-            <h2 class="product-card__title">
-              <a class="product-card__link" href="#">Cat Energy SLIM 500 г</a>
-            </h2>
+            <a class="product-card__link" href="#">
+              <h2 class="product-card__title">Cat Energy SLIM 500 г</h2>
+            </a>
             <ul class="product-card__list">
               <li class="product-card__item">
                 <span class="product-card__property">Масса</span>
@@ -208,17 +234,16 @@
               </li>
               <li class="product-card__item">
                 <span class="product-card__property">Цена</span>
-                <span class="product-card__value">500 р.</span>
+                <span class="product-card__value">500 Р.</span>
               </li>
             </ul>
           </div>
           <a class="product-card__button button button--default" href="#">Заказать</a>
         </li>
         <li class="product-catalog__item product-more">
-          <!--"плюсик" можно сделать двумя псевдоэлементами-->
-          <h2 class="product-more__title">Показать еще 100500 товаров</h2>
+          <h2 class="product-more__title">Показать еще 100500&nbsp;товаров</h2>
           <p class="product-more__text">
-            На самом деле вкусов гораздо больше!
+            На самом деле вкусов гораздо&nbsp;больше!
           </p>
           <a class="product-more__button button button--light" href="#">Показать все</a>
         </li>
@@ -240,25 +265,25 @@
         <li class="additional-product-catalog__item additional-product-card">
           <h3 class="additional-product-card__title">Сахарозаменитель</h3>
           <span class="additional-product-card__description">1 упаковка (100 г)</span>
-          <span class="additional-product-card__price">200 р</span>
+          <span class="additional-product-card__price">200 Р.</span>
           <a class="additional-product-card__button button button--default" href="#">Заказать</a>
         </li>
         <li class="additional-product-catalog__item additional-product-card">
           <h3 class="additional-product-card__title">Питьевая вода</h3>
           <span class="additional-product-card__description">5 литров</span>
-          <span class="additional-product-card__price">50 р</span>
+          <span class="additional-product-card__price">50 Р.</span>
           <a class="additional-product-card__button button button--default" href="#">Заказать</a>
         </li>
         <li class="additional-product-catalog__item additional-product-card">
           <h3 class="additional-product-card__title">Молоко</h3>
           <span class="additional-product-card__description">1 литр</span>
-          <span class="additional-product-card__price">100 р</span>
+          <span class="additional-product-card__price">100 Р.</span>
           <a class="additional-product-card__button button button--default" href="#">Заказать</a>
         </li>
         <li class="additional-product-catalog__item additional-product-card">
           <h3 class="additional-product-card__title">Витамины</h3>
           <span class="additional-product-card__description">1 упаковка (30 г)</span>
-          <span class="additional-product-card__price">300 р</span>
+          <span class="additional-product-card__price">300 Р.</span>
           <a class="additional-product-card__button button button--default" href="#">Заказать</a>
         </li>
       </ul>
@@ -266,7 +291,7 @@
       <b class="additional-product-catalog__offer">
         <!-- иконку подарка можно сделать вторым фоном -->
         Закажите все
-        и получите чехол для
+        и&nbsp;получите чехол для
         кота в подарок!
       </b>
 
@@ -283,7 +308,7 @@
     <div class="map__wrapper">
       <div class="map__card card-address">
         <p class="card-address__left card-address__title">
-          Приглашаем к сотрудничеству дилеров!
+          Приглашаем к&nbsp;сотрудничеству дилеров!
         </p>
         <p class="card-address__right">
           <span class="card-address__text">ул. Большая Конюшенная, д. 19/8</span>
@@ -296,7 +321,7 @@
 
   <div class="page-footer__wrapper wrapper">
     <p class="page-footer__logo">
-      <img src="https://via.placeholder.com/150x150" width="128" height="24" alt="Логотип Cat Energy">
+      <img class="page-footer__image" src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип Cat Energy">
     </p>
     <ul class="page-footer__socials socials-list">
       <li class="socials-list__item">
@@ -317,7 +342,7 @@
     </ul>
     <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="copyright__text">HTML Academy</span>
-      <img class="copyright__logo" src="https://via.placeholder.com/150x150" width="27" height="34" alt="Логотип HTML Academy">
+      <img class="copyright__logo" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
     </a>
   </div>
 

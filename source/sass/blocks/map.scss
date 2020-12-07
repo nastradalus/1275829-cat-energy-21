@@ -41,24 +41,25 @@
 .map__card {
   width: $mobile;
   margin: 0 auto;
-  padding: 0 20px;
 
   @media (min-width: $tablet) {
     width: $tablet;
-    padding: 0 71px;
   }
 
   @media (min-width: $desktop) {
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateY(-50%);
+    transform: translateY(-52%);
     width: 570px;
-
-    padding: 66px 76px 51px;
   }
 }
 
 .map__object {
-  height: 400px;
+  height: 362px;
+  background-color: $color-map;
+
+  @media (min-width: $tablet) {
+    height: 400px;
+  }
 }

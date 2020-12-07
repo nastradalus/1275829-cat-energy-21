@@ -8,14 +8,18 @@
 </head>
 <body class="page__body">
 
-<header class="page-header page-header--main">
-  <div class="page-header__wrapper wrapper">
+<header class="page-header page-header--inner">
+  <div class="page-header__wrapper">
     <div class="page-header__logo">
-      <img src="https://via.placeholder.com/150x150" width="202" height="59" alt="Логотип Cat Energy">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="https://via.placeholder.com/202x59">
+        <source media="(min-width: 768px)" srcset="https://via.placeholder.com/174x52">
+        <img class="page-header__image" src="https://via.placeholder.com/190x38" width="202" height="59" alt="Логотип Cat Energy">
+      </picture>
+      <button class="page-header__menu-toggle" type="button">
+        <span class="visually-hidden">Открыть или закрыть меню</span>
+      </button>
     </div>
-    <button class="page-header__menu-toggle" type="button">
-      <span class="visually-hidden">Открыть или закрыть меню</span>
-    </button>
     <nav class="page-header__nav nav">
       <ul class="nav__list">
         <li class="nav__item">
@@ -34,97 +38,101 @@
 
 <main class="page-content page-content--inner">
   <section class="order-content">
-    <div class="order-content__wrapper wrapper">
+    <div class="order-content__wrapper">
       <h1 class="order-content__title title title--primary">Подбор программы</h1>
       <p class="order-content__slogan">
-        Заполните анкету, и мы подберем
+        Заполните анкету, и мы подберем<br>
         программу питания для вашего кота
       </p>
     </div>
 
     <form class="order-content__form form" method="post" action="https://echo.htmlacademy.ru"
       enctype="multipart/form-data">
-      <div class="form__wrapper wrapper">
-        <div class="form__row form__row--columns-2">
+      <div class="form__wrapper form__wrapper--info">
+        <div class="form__row form__row--info form__row--columns-2">
 
-          <p class="form__column">
-            <label class="form__field">
-              <span class="form__label">Имя:*</span>
-              <input class="form__control form__control--text" type="text" name="name" placeholder="Барсик" required>
-            </label>
-            <label class="form__field">
-              <span class="form__label">Вес (кг):*</span>
-              <input class="form__control form__control--number" type="number" name="weight" placeholder="7" required>
-            </label>
-            <label class="form__field">
-              <span class="form__label">Возраст (лет):</span>
-              <input class="form__control form__control--number" type="number" name="age" placeholder="7">
-            </label>
-          </p>
+          <div class="form__column form__column--info">
+            <p class="form__wrapper form__wrapper--info-content form__wrapper--default">
+              <label class="form__field form__field--text">
+                <span class="form__label">Имя:*</span>
+                <input class="form__control form__control--text" type="text" name="name" placeholder="Барсик" required>
+              </label>
+              <label class="form__field form__field--text">
+                <span class="form__label">Вес (кг):*</span>
+                <input class="form__control form__control--text" type="text" pattern="\d+" name="weight" placeholder="7" min="0" required>
+              </label>
+              <label class="form__field form__field--text">
+                <span class="form__label">Возраст (лет):</span>
+                <input class="form__control form__control--text" type="text" pattern="\d+" name="age" placeholder="7" min="0">
+              </label>
+            </p>
+          </div>
 
-          <p class="form__column form__column--radio">
-            <span class="visually-hidden">Режим питания</span>
-            <label class="form__field form__field--radio">
-              <input class="form__control form__control--radio visually-hidden" type="radio" name="mode" value="Похудение" checked>
-              <span class="form__label">Похудение</span>
-            </label>
-            <label class="form__field form__field--radio">
-              <input class="form__control form__control--radio visually-hidden" type="radio" name="mode" value="Набор массы">
-              <span class="form__label">Набор массы</span>
-            </label>
-            <label class="form__field form__field--radio">
-              <input class="form__control form__control--radio visually-hidden" type="radio" name="mode" value="Не знаю (Нужен ваш совет)">
-              <span class="form__label">Не знаю (Нужен ваш совет)</span>
-            </label>
-          </p>
+          <div class="form__column form__column--radio">
+            <p class="form__wrapper form__wrapper--radio-content form__wrapper--default">
+              <span class="visually-hidden">Режим питания</span>
+              <label class="form__field form__field--radio">
+                <input class="form__control form__control--radio visually-hidden" type="radio" name="mode" value="Похудение" checked>
+                <span class="form__label">Похудение</span>
+              </label>
+              <label class="form__field form__field--radio">
+                <input class="form__control form__control--radio visually-hidden" type="radio" name="mode" value="Набор массы">
+                <span class="form__label">Набор массы</span>
+              </label>
+              <label class="form__field form__field--radio">
+                <input class="form__control form__control--radio visually-hidden" type="radio" name="mode" value="Не знаю (Нужен ваш совет)">
+                <span class="form__label">Не знаю (Нужен ваш совет)</span>
+              </label>
+            </p>
+          </div>
 
         </div>
       </div>
 
-      <div class="form__row title title--line">
-        <div class="form__wrapper form__column title__wrapper wrapper">
+      <div class="form__row form__row--title title title--line">
+        <div class="form__wrapper title__wrapper wrapper">
           <h2 class="form__title title__text">Контактные данные (владельца кота)</h2>
         </div>
       </div>
 
-      <div class="form__wrapper wrapper">
-        <div class="form__row form__row--columns-2">
-          <label class="form__column form__field">
+      <div class="form__wrapper form__wrapper--content form__wrapper--contacts">
+        <div class="form__row form__row--contacts form__row--columns-2">
+          <label class="form__column form__field form__field--text">
             <span class="form__label">E-mail:*</span>
             <input class="form__control form__control--text" type="email" name="email" placeholder="кuklachev@gmail.com"
               required>
             <!-- svg-иконка -->
           </label>
-          <label class="form__column form__field">
+          <label class="form__column form__field form__field--text">
             <span class="form__label">Телефон:*</span>
-            <input class="form__control form__control--text" type="text" name="phone" placeholder="8 (960) 900-60-90"
+            <input class="form__control form__control--text" type="text" pattern="[ +0-9()-]+" name="phone" placeholder="8 (960) 900-60-90"
               required>
             <!-- svg-иконка -->
           </label>
         </div>
       </div>
 
-      <div class="form__row title title--line">
+      <div class="form__row form__row--title title title--line">
         <div class="form__wrapper form__column title__wrapper wrapper">
           <h2 class="form__title title__text">Комментарий</h2>
         </div>
       </div>
 
-      <div class="form__wrapper wrapper">
+      <div class="form__wrapper form__wrapper--content form__wrapper--comment">
         <label class="form__row form__field">
           <span class="visually-hidden">Расскажите обо всех повадках кота</span>
           <textarea class="form__control form__control--textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
       </div>
 
-      <div class="form__row title title--line">
+      <div class="form__row form__row--title title title--line">
         <div class="form__wrapper form__column title__wrapper wrapper">
           <h2 class="form__title title__text">Дополнительно</h2>
         </div>
       </div>
 
-      <div class="form__wrapper wrapper">
-        <p class="form__row form__row--columns-4">
+      <div class="form__wrapper form__wrapper--content form__wrapper--additional">
+        <p class="form__row form__row--default form__row--columns-4">
           <label class="form__column form__field form__field--checkbox">
             <input class="form__control form__control--checkbox visually-hidden" type="checkbox" name="sweetener" checked>
             <span class="form__label">Cахарозаменитель</span>
@@ -143,11 +151,9 @@
           </label>
         </p>
 
-        <div class="form__row form__row--columns-2">
-          <p class="form__column">
-            <button class="form__button button button--default" type="submit">Отправить заявку</button>
-          </p>
-          <p class="form__column form__notice">
+        <div class="form__row form__row--bottom">
+          <button class="form__button button button--default" type="submit">Отправить заявку</button>
+          <p class="form__notice">
             * — Обязательные поля
           </p>
         </div>
@@ -164,7 +170,7 @@
     <div class="map__wrapper">
       <div class="map__card card-address">
         <p class="card-address__left card-address__title">
-          Приглашаем к сотрудничеству дилеров!
+          Приглашаем к&nbsp;сотрудничеству дилеров!
         </p>
         <p class="card-address__right">
           <span class="card-address__text">ул. Большая Конюшенная, д. 19/8</span>
@@ -177,7 +183,7 @@
 
   <div class="page-footer__wrapper wrapper">
     <p class="page-footer__logo">
-      <img src="https://via.placeholder.com/150x150" width="128" height="24" alt="Логотип Cat Energy">
+      <img class="page-footer__image" src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип Cat Energy">
     </p>
     <ul class="page-footer__socials socials-list">
       <li class="socials-list__item">
@@ -198,7 +204,7 @@
     </ul>
     <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="copyright__text">HTML Academy</span>
-      <img class="copyright__logo" src="https://via.placeholder.com/150x150" width="27" height="34" alt="Логотип HTML Academy">
+      <img class="copyright__logo" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
     </a>
   </div>
 

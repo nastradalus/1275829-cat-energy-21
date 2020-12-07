@@ -3,14 +3,24 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  padding: 14px 0 17px;
+
+  @media (min-width: $tablet) {
+    align-items: flex-start;
+    padding: 26px 37px 28px;
+  }
 
   @media (min-width: $desktop) {
     flex-wrap: nowrap;
+    align-items: center;
+    padding: 15px 0 16px;
   }
 }
 
 .additional-product-card__title {
   flex-basis: 100%;
+  margin-top: 0;
+  margin-bottom: 11px;
   font-family: $font-additional;
   color: $color-tertiary-dark;
   font-size: 16px;
@@ -21,12 +31,15 @@
   @media (min-width: $tablet) {
     flex-basis: auto;
     flex-grow: 1;
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop) {
     flex-basis: 325px;
     flex-grow: 0;
     flex-shrink: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -37,10 +50,15 @@
 
   @media (min-width: $tablet) {
     flex-basis: auto;
+    margin-top: 2px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop) {
     flex-basis: 245px;
+    flex-shrink: 0;
+    margin-top: 9px;
   }
 }
 
@@ -50,30 +68,39 @@
 
   @media (min-width: $tablet) {
     flex-basis: auto;
+    flex-shrink: 0;
+    width: 93px;
+    margin-top: 2px;
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop) {
     flex-basis: auto;
     flex-grow: 1;
+    flex-shrink: 1;
     text-align: left;
+    margin-top: 9px;
   }
 }
 
 .additional-product-card__button {
   flex-basis: 100%;
+  margin-top: 12px;
+  padding: 12px 11px;
+  text-align: center;
   font-size: 16px;
   line-height: 16px;
+
+  @media (min-width: $tablet) {
+    margin-top: 15px;
+    padding: 11px;
+  }
 
   @media (min-width: $desktop) {
     flex-basis: 244px;
     flex-shrink: 0;
+    margin-top: 0;
+    padding: 12px;
   }
-}
-
-.additional-product-catalog__offer {
-  color: $color-white;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
-  background-color: $color-primary;
 }
