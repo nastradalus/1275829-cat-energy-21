@@ -9,13 +9,17 @@
 <body class="page__body">
 
 <header class="page-header page-header--main">
-  <div class="page-header__wrapper wrapper">
+  <div class="page-header__wrapper">
     <div class="page-header__logo">
-      <img src="https://via.placeholder.com/150x150" width="202" height="59" alt="Логотип Cat Energy">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="https://via.placeholder.com/202x59">
+        <source media="(min-width: 768px)" srcset="https://via.placeholder.com/174x52">
+        <img class="page-header__image" src="https://via.placeholder.com/190x38" width="202" height="59" alt="Логотип Cat Energy">
+      </picture>
+      <button class="page-header__menu-toggle" type="button">
+        <span class="visually-hidden">Открыть или закрыть меню</span>
+      </button>
     </div>
-    <button class="page-header__menu-toggle" type="button">
-      <span class="visually-hidden">Открыть или закрыть меню</span>
-    </button>
     <nav class="page-header__nav nav">
       <ul class="nav__list">
         <li class="nav__item nav__item--current">
@@ -37,10 +41,16 @@
   <section class="main-header">
     <h1 class="visually-hidden">Cat Energy - магазин специального корма для котов</h1>
     <div class="main-header__wrapper wrapper">
-      <p class="main-header__title">Функциональное питание для котов</p>
-      <p class="main-header__slogan">Занялся собой? Займись котом!</p>
-      <img class="main-header__image" src="https://via.placeholder.com/150x150" width="552" height="499" alt="Cat Energy PRO со вкусом курицы, 500 г">
-      <a class="main-header__button button button--default" href="form.html">Подобрать программу</a>
+      <p class="main-header__container main-header__title">Функциональное питание для котов</p>
+      <p class="main-header__container main-header__slogan">Занялся собой? Займись котом!</p>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="https://via.placeholder.com/552x499">
+        <source media="(min-width: 768px)" srcset="https://via.placeholder.com/709x609">
+        <img class="main-header__image" src="https://via.placeholder.com/280x270" width="552" height="499" alt="Cat Energy PRO со вкусом курицы, 500 г">
+      </picture>
+      <div class="main-header__container main-header__container--button">
+        <a class="main-header__button button button--default" href="form.html">Подобрать программу</a>
+      </div>
     </div>
   </section>
 
@@ -94,7 +104,7 @@
         <li class="main-advantages__item main-advantages__item--time">
           Уже через месяц наслаждайтесь
           изменениями к лучшему
-          вашего питомца!
+          вашего&nbsp;питомца!
         </li>
       </ul>
     </div>
@@ -105,55 +115,70 @@
       <h2 class="main-example__title">Живой пример</h2>
     </div>
     <div class="main-example__wrapper main-example__wrapper--content">
-      <div class="main-example__container wrapper">
-        <div class="main-example__description">
+      <div class="main-example__description wrapper">
+        <p class="main-example__text">
+          Борис сбросил 5 кг за 2 месяца, просто заменив свой
+          обычный корм на Cat Energy Slim. Отличный результат
+          без изнуряющих тренировок! При этом он не менял своих
+          привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <ul class="main-example__list">
+          <li class="main-example__item main-example__item--highlighted">
+            <span class="main-example__caption main-example__caption--highlighted">снижение веса</span>
+            <span class="main-example__value main-example__value--highlighted">5 кг</span>
+          </li>
+          <li class="main-example__item main-example__item--highlighted">
+            <span class="main-example__caption main-example__caption--highlighted">затрачено времени</span>
+            <span class="main-example__value main-example__value--highlighted">60 дней</span>
+          </li>
+          <li class="main-example__item main-example__item--total">
+            <span class="main-example__caption main-example__caption--total">затраты на питание: </span>
+            <span class="main-example__value main-example__value--total">15 000 руб.</span>
+          </li>
+        </ul>
+      </div>
 
-          <p class="main-example__text">
-            Борис сбросил 5 кг за 2 месяца, просто заменив свой
-            обычный корм на Cat Energy Slim. Отличный результат
-            без изнуряющих тренировок! При этом он не менял своих
-            привычек и по-прежнему спит по 16 часов в день.
+      <div class="main-example__slider slider">
+        <ul class="slider__list">
+          <li class="slider__item slider__item--before">
+            <p class="slider__container">
+              <!--<picture>
+                <source media="(min-width: 1440px)" srcset="https://via.placeholder.com/690x656">
+                <source media="(min-width: 768px)" srcset="https://via.placeholder.com/708x620">
+                <img class="slider__image" src="https://via.placeholder.com/311x232" width="690" height="536" alt="Фото кота до кормления специальным кормом">
+              </picture>-->
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-fat.png">
+                <source media="(min-width: 768px)" srcset="img/cat-fat.png">
+                <img class="slider__image" src="img/cat-fat.png" width="690" height="536" alt="Фото кота до кормления специальным кормом">
+              </picture>
+            </p>
+          </li>
+
+          <li class="slider__item slider__item--after">
+            <p class="slider__container">
+              <!--<picture>
+                <source media="(min-width: 1440px)" srcset="https://via.placeholder.com/690x656">
+                <source media="(min-width: 768px)" srcset="https://via.placeholder.com/708x620">
+                <img class="slider__image" src="https://via.placeholder.com/251x240" width="690" height="536" alt="Фото кота до кормления специальным кормом">
+              </picture>-->
+              <picture>
+                <source media="(min-width: 1440px)" srcset="img/cat-skinny.png">
+                <source media="(min-width: 768px)" srcset="img/cat-skinny.png">
+                <img class="slider__image" src="img/cat-skinny.png" width="690" height="536" alt="Фото кота до кормления специальным кормом">
+              </picture>
+            </p>
+          </li>
+        </ul>
+
+        <div class="slider__nav">
+          <button class="slider__button-arrow slider__button-arrow--before" type="button">Было</button>
+          <p class="slider__progress">
+            <button class="slider__button-dot" type="button">
+              <span class="visually-hidden">Изменить отображение фотографий котов</span>
+            </button>
           </p>
-
-          <ul class="main-example__list">
-            <li class="main-example__item main-example__item--highlighted">
-              <span class="main-example__caption main-example__caption--highlighted">снижение веса</span>
-              <span class="main-example__value main-example__value--highlighted">5 кг</span>
-            </li>
-            <li class="main-example__item main-example__item--highlighted">
-              <span class="main-example__caption main-example__caption--highlighted">затрачено времени</span>
-              <span class="main-example__value main-example__value--highlighted">60 дней</span>
-            </li>
-            <li class="main-example__item main-example__item--total">
-              <span class="main-example__caption main-example__caption--total">затраты на питание: </span>
-              <span class="main-example__value main-example__value--total">15 000 руб.</span>
-            </li>
-          </ul>
-
-        </div>
-        <div class="main-example__slider">
-          <div class="slider">
-            <ul class="slider__list">
-              <li class="slider__item">
-                <!-- не смогла найти исходник картинки полного котика, чтобы взять её размеры -->
-                <img class="main-example__image-before" src="https://via.placeholder.com/150x150" alt="Фото кота до кормления специальным кормом">
-              </li>
-              <li class="slider__item slider__item--overlay">
-                <!-- не смогла найти исходник картинки худового котика, чтобы взять её размеры -->
-                <img class="main-example__image-after" src="https://via.placeholder.com/150x150" alt="Фото кота после кормления специальным кормом">
-              </li>
-            </ul>
-
-            <div class="slider__nav">
-              <button class="slider__button-arrow slider__button-arrow--before" type="button">Было</button>
-              <p class="slider__progress">
-                <button class="slider__button-dot" type="button">
-                  <span class="visually-hidden">Изменить отображение фотографий котов</span>
-                </button>
-              </p>
-              <button class="slider__button-arrow slider__button-arrow--after" type="button">Стало</button>
-            </div>
-          </div>
+          <button class="slider__button-arrow slider__button-arrow--after" type="button">Стало</button>
         </div>
       </div>
     </div>
@@ -168,7 +193,7 @@
     <div class="map__wrapper">
       <div class="map__card card-address">
         <p class="card-address__left card-address__title">
-          Приглашаем к сотрудничеству дилеров!
+          Приглашаем к&nbsp;сотрудничеству дилеров!
         </p>
         <p class="card-address__right">
           <span class="card-address__text">ул. Большая Конюшенная, д. 19/8</span>
@@ -181,7 +206,7 @@
 
   <div class="page-footer__wrapper wrapper">
     <p class="page-footer__logo">
-      <img src="https://via.placeholder.com/150x150" width="128" height="24" alt="Логотип Cat Energy">
+      <img class="page-footer__image" src="https://via.placeholder.com/128x24" width="128" height="24" alt="Логотип Cat Energy">
     </p>
     <ul class="page-footer__socials socials-list">
       <li class="socials-list__item">
@@ -202,7 +227,7 @@
     </ul>
     <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
       <span class="copyright__text">HTML Academy</span>
-      <img class="copyright__logo" src="https://via.placeholder.com/150x150" width="27" height="34" alt="Логотип HTML Academy">
+      <img class="copyright__logo" src="https://via.placeholder.com/27x34" width="27" height="34" alt="Логотип HTML Academy">
     </a>
   </div>
 

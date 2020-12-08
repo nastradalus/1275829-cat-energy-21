@@ -1,7 +1,6 @@
 .button {
   &--default {
     display: inline-block;
-    padding: 14px;
     font-family: $font-additional;
     color: $color-white;
     text-transform: uppercase;
@@ -20,6 +19,9 @@
   }
 
   &--direction {
+    position: relative;
+    display: inline-block;
+    padding-right: 40px;
     font-family: $font-additional;
     color: $color-black;
     font-size: 16px;
@@ -27,14 +29,55 @@
     text-transform: uppercase;
     text-decoration: none;
 
+    &::after {
+      content: "";
+      position: absolute;
+      top: 43%;
+      right: 0;
+      transform: translate(-3px, -50%);
+      width: 22px;
+      height: 2px;
+      background-color: $color-black;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 43%;
+      right: 0;
+      transform: translate(-4px, -50%) rotate(45deg);
+      border-left: 4px solid transparent;
+      border-bottom: 4px solid transparent;
+      border-top: 4px solid $color-black;
+      border-right: 4px solid $color-black;
+    }
+
     &:active {
       opacity: 0.3;
+    }
+
+    &:hover {
+      padding-right: 58px;
+
+      &::after {
+        width: 30px;
+      }
+    }
+
+    @media (min-width: $tablet) {
+      padding-right: 49px;
+      font-size: 20px;
+      line-height: 20px;
+    }
+
+    @media (min-width: $desktop) {
+      padding-right: 52px;
     }
   }
 
   &--light {
     display: inline-block;
-    padding: 14px;
+    padding: 13px 20px 10px;
     font-family: $font-additional;
     color: $color-tertiary;
     text-transform: uppercase;
@@ -48,6 +91,10 @@
     &:active {
       color: rgba($color-tertiary, 0.3);
       background-color: $color-secondary;
+    }
+
+    @media (min-width: $tablet) {
+      padding: 14px;
     }
   }
 }

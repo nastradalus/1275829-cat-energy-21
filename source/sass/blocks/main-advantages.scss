@@ -1,24 +1,83 @@
+.main-advantages {
+  padding-top: 5px;
+  padding-bottom: 42px;
+
+  @media (min-width: $tablet) {
+    padding-top: 46px;
+    padding-bottom: 46px;
+    border-bottom: 1px solid $color-tertiary-lighter;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 71px;
+    border: none;
+  }
+}
+
+.main-advantages__title {
+  margin-top: 0;
+  margin-bottom: 38px;
+
+  font-family: $font-additional;
+  color: $color-black;
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 32px;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
 .main-advantages__list {
   @include listReset();
+  margin: 0;
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 
   @media (min-width: $tablet) {
     grid-template-columns: 1fr 1fr;
-    gap: 37px 153px;
+    gap: 37px 58px;
+    counter-reset: advantagesCounter;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 37px 94px;
+    gap: 37px 78px;
   }
 }
 
-.main-advantages__title {
-  font-family: $font-additional;
-  color: $color-black;
-  font-size: 36px;
-  line-height: 40px;
-  font-weight: 400;
+.main-advantages__item {
+  position: relative;
+  padding-left: 80px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+
+  @media (min-width: $tablet) {
+    min-height: 280px;
+    padding: 152px 75px 0 0;
+    font-size: 16px;
+    line-height: 24px;
+
+    &::before {
+      content: counter(advantagesCounter);
+      counter-increment: advantagesCounter;
+      position: absolute;
+      top: 0;
+      left: 115px;
+      z-index: -1;
+      pointer-events: none;
+      font-family: $font-additional;
+      color: $color-secondary-light;
+      font-size: 280px;
+      line-height: 280px;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    padding-right: 0;
+  }
 }
