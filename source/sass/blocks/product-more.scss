@@ -26,6 +26,7 @@
   @media (min-width: $tablet) {
     display: flex;
     flex-direction: column;
+    margin-top: 79px;
     padding: 159px 36px 38px;
     border: 2px solid $color-secondary-light;
 
@@ -68,6 +69,7 @@
   line-height: 16px;
 
   @media (min-width: $tablet) {
+    flex-grow: 1;
     margin-top: 24px;
     font-size: 16px;
     line-height: 18px;
@@ -82,7 +84,6 @@
   line-height: 16px;
 
   @media (min-width: $tablet) {
-    margin-top: auto;
     padding: 12px 11px 11px;
   }
 }

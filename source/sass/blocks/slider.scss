@@ -16,7 +16,7 @@
 .slider__list {
   @include listReset();
   position: relative;
-  height: 240px;
+  height: 250px;
   margin: 0;
 
   @media (min-width: $tablet) {
@@ -47,15 +47,15 @@
     height: 100%;
 
     @media (min-width: $tablet) {
-      width: 50%;
-
       .slider__container {
         right: auto;
       }
     }
 
     @media (min-width: $desktop) {
-      width: 53%;
+      .slider__container {
+        left: -24px;
+      }
     }
   }
 
@@ -67,6 +67,11 @@
     @media (min-width: $tablet) {
       width: 50%;
       display: block;
+      background-color: $color-white;
+      background-image: linear-gradient(0deg, $color-secondary-extra-light, $color-secondary-extra-light);
+      background-repeat: no-repeat;
+      background-size: auto calc(100% - 191px);
+      background-position: bottom;
 
       .slider__container {
         left: auto;
@@ -74,16 +79,11 @@
     }
 
     @media (min-width: $desktop) {
-      width: 47%;
-      //background-color: $color-secondary-extra-light;
-      background-image: linear-gradient(0deg, $color-secondary-extra-light, $color-secondary-extra-light);
-      background-repeat: no-repeat;
       background-size: auto calc(100% - 194px);
-      background-position: bottom;
 
-      /*.slider__container {
-        right: 70px;
-      }*/
+      .slider__container {
+        right: 21px;
+      }
     }
   }
 }
@@ -125,7 +125,7 @@
   justify-content: space-between;
   max-width: $mobile;
   margin: 0 auto;
-  padding: 26px 45px 0;
+  padding: 16px 45px 0;
 
   @media (min-width: $tablet) {
     position: absolute;
@@ -137,7 +137,7 @@
   }
 
   @media (min-width: $desktop) {
-    margin: 0 24px 0 63px;
+    margin: 0 44px 0 43px;
     padding: 0;
   }
 }

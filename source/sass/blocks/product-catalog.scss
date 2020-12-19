@@ -22,7 +22,7 @@
 
     @media (min-width: $tablet) {
       width: $tablet;
-      margin-top: 164px;
+      margin-top: 85px;
       padding-left: 30px;
       padding-right: 30px;
     }
@@ -42,11 +42,11 @@
   @media (min-width: $tablet) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 141px 60px;
+    gap: 62px 60px;
   }
 
   @media (min-width: $desktop) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 144px 80px;
+    gap: 65px 80px;
   }
 }

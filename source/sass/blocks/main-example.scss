@@ -65,7 +65,14 @@
 
 .main-example__text {
   margin: 0;
-  padding-right: 7px;
+
+  @media (min-width: $tablet) {
+    padding-right: 7px;
+  }
+
+  @media (min-width: $tablet) {
+    padding-right: 21px;
+  }
 }
 
 .main-example__list {
@@ -228,7 +235,7 @@
     flex-basis: 48%;
     flex-shrink: 0;
     margin-left: 20px;
-    margin-right: 70px;
+    margin-right: 49px;
     padding-top: 0;
     background-color: transparent;
   }
