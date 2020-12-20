@@ -304,6 +304,10 @@
       top: 10px;
       left: 16px;
 
+      &:hover + .form__label::before {
+        border-color: $color-control-hover;
+      }
+
       &:checked + .form__label::after {
         content: "";
       }
@@ -379,6 +383,10 @@
     .form__control {
       top: 10px;
       left: 16px;
+
+      &:hover + .form__label::before {
+        border-color: $color-control-hover;
+      }
 
       &:checked + .form__label::after {
         content: "";
