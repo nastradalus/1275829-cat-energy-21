@@ -11,4 +11,15 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:hover {
+    .copyright__logo {
+      color: $color-primary;
+    }
+  }
+}
+
+.copyright__logo {
+  display: block;
+  color: $color-tertiary-light;
 }

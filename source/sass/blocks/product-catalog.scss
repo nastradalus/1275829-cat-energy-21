@@ -50,3 +50,13 @@
     gap: 65px 80px;
   }
 }
+
+.product-catalog__item {
+  &--hidden {
+    display: none;
+  }
+
+  &--shown {
+    display: flex;
+  }
+}

@@ -32,6 +32,16 @@
   padding: 39px 0 31px;
   border-bottom: 1px solid $color-tertiary-extra-light;
 
+  &[href] {
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 0.6;
+    }
+  }
+
   @media (min-width: $tablet) {
     flex-shrink: 0;
     width: auto;
@@ -43,11 +53,9 @@
 .page-footer__socials {
   width: 100%;
   margin: 0;
-  padding: 20px 0;
   border-bottom: 1px solid $color-tertiary-extra-light;
 
   @media (min-width: $tablet) {
-    padding: 0 10px 0 40px;
     border: none;
   }
 }
