@@ -15,6 +15,7 @@
 
   &--line {
     position: relative;
+    overflow: hidden;
 
     &::after {
       content: "";
