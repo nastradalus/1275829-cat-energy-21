@@ -33,6 +33,7 @@
     left: 0;
     right: 0;
     bottom: 0;
+    z-index: 2;
     width: $desktop - 110px * 2;
     margin: 0 auto;
   }
@@ -55,11 +56,25 @@
   }
 }
 
-.map__object {
+.map__container {
+  position: relative;
   height: 362px;
   background-color: $color-map;
+  overflow: hidden;
 
   @media (min-width: $tablet) {
     height: 400px;
   }
+}
+
+.map__image,
+.map__object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }

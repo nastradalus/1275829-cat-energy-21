@@ -29,6 +29,7 @@
   @media (min-width: $desktop) {
     position: absolute;
     bottom: 0;
+    z-index: 1;
     width: 100%;
     height: 656px;
   }
@@ -39,20 +40,32 @@
   top: 0;
   width: 100%;
   height: 100%;
+  background-color: $color-secondary-extra-light;
   overflow: hidden;
 
   &--before {
     left: 0;
     right: auto;
+    z-index: 1;
     height: 100%;
 
     @media (min-width: $tablet) {
+      width: 50%;
+      background-color: $color-white;
+      background-image: linear-gradient(0deg, $color-secondary-extra-light, $color-secondary-extra-light);
+      background-repeat: no-repeat;
+      background-size: auto calc(100% - 191px);
+      background-position: bottom;
+
       .slider__container {
         right: auto;
       }
     }
 
     @media (min-width: $desktop) {
+      background-image: linear-gradient(0deg, $color-secondary-light, $color-secondary-light);
+      background-size: auto calc(100% - 194px);
+
       .slider__container {
         left: -24px;
       }
@@ -62,16 +75,10 @@
   &--after {
     left: auto;
     right: 0;
-    display: none;
 
     @media (min-width: $tablet) {
-      width: 50%;
       display: block;
-      background-color: $color-white;
-      background-image: linear-gradient(0deg, $color-secondary-extra-light, $color-secondary-extra-light);
-      background-repeat: no-repeat;
-      background-size: auto calc(100% - 191px);
-      background-position: bottom;
+      background-color: transparent;
 
       .slider__container {
         left: auto;
@@ -79,7 +86,11 @@
     }
 
     @media (min-width: $desktop) {
+      background-color: $color-white;
+      background-image: linear-gradient(0deg, $color-secondary-extra-light, $color-secondary-extra-light);
+      background-repeat: no-repeat;
       background-size: auto calc(100% - 194px);
+      background-position: bottom;
 
       .slider__container {
         right: 21px;
@@ -132,6 +143,7 @@
     left: 0;
     right: 0;
     bottom: 67px;
+    z-index: 2;
     max-width: $tablet;
     padding: 0 82px;
   }
@@ -205,8 +217,8 @@
   @media (min-width: $tablet) {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: calc(50% - 17px);
+    transform: translateY(-50%);
     width: 34px;
     height: 34px;
     border: 1px solid $color-secondary-dark;
@@ -235,6 +247,20 @@
     &:active {
       border-color: $color-primary;
       box-shadow: 0 3px 5px rgba($color-black, 0.2);
+    }
+  }
+
+  &--before {
+    @media (min-width: $tablet) {
+      left: calc(100% - 34px);
+    }
+  }
+
+  &--after {
+    margin-left: auto;
+
+    @media (min-width: $tablet) {
+      left: 0;
     }
   }
 }

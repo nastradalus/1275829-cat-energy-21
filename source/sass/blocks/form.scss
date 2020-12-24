@@ -279,6 +279,7 @@
   display: block;
 
   &--text {
+    position: relative;
     display: flex;
     align-items: center;
 
@@ -465,10 +466,18 @@
 
   &:focus {
     outline: 2px solid $color-tertiary;
+
+    & + .form__icon {
+      color: $color-primary;
+    }
   }
 
   &:focus:invalid {
     outline: 2px solid $color-error;
+
+    & + .form__icon {
+      color: $color-error;
+    }
   }
 
   &::placeholder {
@@ -500,6 +509,12 @@
     font-size: 20px;
     line-height: 20px;
   }
+}
+
+.form__icon {
+  position: absolute;
+  right: 15px;
+  color: $color-tertiary-dark;
 }
 
 .form__button {
