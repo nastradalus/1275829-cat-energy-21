@@ -1,6 +1,7 @@
 .socials-list {
   list-style-type: none;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   padding: 20px 0;
@@ -11,14 +12,10 @@
 }
 
 .socials-list__item {
-  &:not(:first-of-type) {
-    margin-left: 33px;
-  }
+  margin: 0 16px;
 
   @media (min-width: $tablet) {
-    &:not(:first-of-type) {
-      margin-left: 24px;
-    }
+    margin: 0 12px;
   }
 }
 
