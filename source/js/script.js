@@ -44,13 +44,13 @@
 
   if (slider == null) return;
 
-  let sliderDrag = slider.querySelector('.slider__button-dot');
+  let sliderDrag = slider.querySelector(".slider__button-dot");
   let sliderDragBefore = "slider__button-dot--before";
   let sliderDragAfter = "slider__button-dot--after";
-  let sliderTrack = slider.querySelector('.slider__progress');
-  let slideBefore = slider.querySelector('.slider__item--before');
-  let sliderBeforeButton = slider.querySelector('.slider__button-arrow--before');
-  let sliderAfterButton = slider.querySelector('.slider__button-arrow--after');
+  let sliderTrack = slider.querySelector(".slider__progress");
+  let slideBefore = slider.querySelector(".slider__item--before");
+  let sliderBeforeButton = slider.querySelector(".slider__button-arrow--before");
+  let sliderAfterButton = slider.querySelector(".slider__button-arrow--after");
 
   let showBefore = new Event("showBefore");
 
@@ -59,8 +59,8 @@
 
     let shiftX = event.clientX - sliderDrag.getBoundingClientRect().left;
 
-    document.addEventListener('mousemove', onMouseMove);
-    document.addEventListener('mouseup', onMouseUp);
+    document.addEventListener("mousemove", onMouseMove);
+    document.addEventListener("mouseup", onMouseUp);
 
     function onMouseMove(event) {
       let newLeft = event.clientX - shiftX - sliderTrack.getBoundingClientRect().left;
@@ -75,13 +75,13 @@
         newLeft = rightEdge;
       }
 
-      sliderDrag.style.left = newLeft + 'px';
-      slideBefore.style.width = (newLeft + sliderDifference) + 'px';
+      sliderDrag.style.left = newLeft + "px";
+      slideBefore.style.width = (newLeft + sliderDifference) + "px";
     }
 
     function onMouseUp() {
-      document.removeEventListener('mouseup', onMouseUp);
-      document.removeEventListener('mousemove', onMouseMove);
+      document.removeEventListener("mouseup", onMouseUp);
+      document.removeEventListener("mousemove", onMouseMove);
     }
 
   });
